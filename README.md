@@ -66,7 +66,7 @@ download version 2.2**, which is _not_ the current version of the language.
 [Linux](http://www.contextfreeart.org/download/ContextFreeSource2.2.2.tgz)).
 _Note: the Mac version is also installed on the CS lab Macs._ The version 2.2
 documentation is 
-[here](http://contextfreeart.org/mediawiki/index.php/ Version_2_Syntax).
+[here](https://github.com/MtnViewJohn/context-free/wiki/Version-2-Syntax).
 
 2. Write an interesting ContextFree program. Save your program in a file called
 `firstname_lastname.cfdg` (where you fill in your first and last names, of
