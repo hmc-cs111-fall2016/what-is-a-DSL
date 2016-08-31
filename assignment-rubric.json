@@ -1,0 +1,110 @@
+{
+  "deadline": "2016-01-24T11:59:0.575Z",
+  "teams": false,
+
+  "sections": [
+
+    {
+      "key": "assignment-requirements",
+      "title": "Assignment requirements",
+      "questions": [
+
+        {
+          "key": "timliness",
+          "text": "The assignment was completed on time.",
+          "controlType": "dropdown",
+          "weight": 0.2,
+          "required": true,
+          "options": [
+            {"value": "Yes",                  "key": 4},
+            {"value": "Within 1 hour",        "key": 3},
+            {"value": "Within 1 day",         "key": 2.5},
+            {"value": "More than 1 day late", "key": 0}
+          ]
+        },
+
+        {
+          "key": "completeness",
+          "text": "The submitted work was complete.",
+          "helptext": "`firstname_lastname.cfdg`, `firstname_lastname_variant.png`, all questions answered in `my-dsl.md` and `context-free.md`",
+          "controlType": "dropdown",
+          "weight": 0.3,
+          "required": true,          
+          "options": [
+            {"value": "Strongly agree", "key": 4},
+            {"value": "Agree", "key": 3},
+            {"value": "Disagree", "key": 2},
+            {"value": "Strongly disagree", "key": 1}
+          ]
+        },
+
+        {
+          "key": "requirements-comments",
+          "text": "Comments",
+          "controlType": "textarea",
+          "required": false
+        }
+
+      ]
+    },
+
+    {
+      "key": "dsl",
+      "title": "DSL description",
+      "questions": [
+
+        {
+          "key": "dsl-quality",
+          "text": "The submitted work was of high quality (e.g., well-written, thoughtful, and thought-provoking)",
+          "controlType": "dropdown",
+          "weight": 0.3,
+          "required": true,          
+          "options": [
+            {"value": "Strongly agree", "key": 4},
+            {"value": "Agree", "key": 3},
+            {"value": "Disagree", "key": 2},
+            {"value": "Strongly disagree", "key": 1}
+          ]
+        },
+
+        {
+          "key": "dsl-comments",
+          "text": "Comments",
+          "controlType": "textarea",
+          "required": false
+        }
+
+      ]
+    },
+
+    {
+      "key": "context-free",
+      "title": "ContextFree questions",
+      "questions": [
+
+        {
+          "key": "context-free-quality",
+          "text": "The submitted work was of high quality (e.g., well-written, thoughtful, and thought-provoking)",
+          "controlType": "dropdown",
+          "weight": 0.2,
+          "required": true,          
+          "options": [
+            {"value": "Strongly agree", "key": 4},
+            {"value": "Agree", "key": 3},
+            {"value": "Disagree", "key": 2},
+            {"value": "Strongly disagree", "key": 1}
+          ]
+        },
+
+        {
+          "key": "context-free-comments",
+          "text": "Comments",
+          "controlType": "textarea",
+          "required": false
+        }
+
+      ]
+    }
+
+  ]
+}
