@@ -15,7 +15,7 @@ program in an interesting DSL: ContextFree.
 
 After this assignment, you should be able to:
 
-- Recognize properties of a DSL, and evaluate those properties using common 
+- Recognize properties of a DSL and evaluate those properties using common 
 terms.
 - Write in at least two DSLs (ContextFree and Markdown).
 - Use GitHub as a submission system.
@@ -53,10 +53,8 @@ it---just assume that it *is* a DSL.
 Open the file `my-dsl.md`, read the questions there, and edit the file to
 include your answers to those questions. Back up your answers with any evidence 
 that you can find about your DSL. Your answers must be formatted in [markdown].
-
-_Note: there are many different kinds of markdown. If you already have a
-favorite kind of markdown, feel free to use it. If you don't have a favorite,
-you can use the same [markdown] that we use on the wiki._
+Also, please don't use more than 80 characters per line in your files. It will
+make it _much_ easier for people to review your work.
 
 ## Learn, use, and critique ContextFree
 1. Download ContextFree, a domain-specific language for making art. **You should
@@ -83,19 +81,25 @@ uniquely identifies this version of your program).
 Your name is on the left side of this table; the person whose work you should
 review is on the right side of this table:
 
-| Your name   | Your critique partner's name |
-| ----------- | ---------------------------  |
-| Anthony R.  |                              |
-| Daniel S.   |                              |
-| Daniel Z.   |                              |
-| Farhan A.   |                              |
-| Jeb B.      |                              |
-| Linnea N.   |                              |
-| Matt B.     |                              |
-| Renata P.   |                              |
-| Ross W.     |                              |
-| Sophia S.   |                              |
-| Tiffany F.  |                              |
+| You...      | Should critique...          |
+| ----------- | --------------------------- |
+| Anna C.     | Justin C.                   |
+| Anthony R.  | Linnea N.                   |
+| Daniel S.   | Matt B.                     |
+| Daniel Z.   | Michael S.                  |
+| Farhan A.   | Renata P.                   |
+| Jeb B.      | Ross W.                     |
+| Jon L.      | Sophia S.                   |
+| Julien C.   | Tiffany F.                  |
+| Justin C.   | Wokky P.                    |
+| Linnea N.   | Anna C.                     |
+| Matt B.     | Anthony R.                  |
+| Michael S.  | Daniel S.                   |
+| Renata P.   | Daniel Z.                   |
+| Ross W.     | Farhan A.                   |
+| Sophia S.   | Jeb B.                      |
+| Tiffany F.  | Jon L.                      |
+| Wokky P.    | Julien C.                   |
 
 ## Peer-review your partner's work
 Once your partner has submitted, you can comment on their work. You should find
@@ -115,7 +119,7 @@ try to answer it!
 might add to your partner's work?
 
 ## Grading
-Good responses (i.e., responses that receive a 3) will:
+Good responses (i.e., responses that receive a 3 out of 4) will:
 
    + fully respond to every prompt in the starter file, _and_
    + be well-written and easy to read, i.e., clear yet concise using good 
@@ -124,7 +128,7 @@ Good responses (i.e., responses that receive a 3) will:
    + where appropriate, support your thoughts with references to material from
    the reading or from language documentation.
 
-Great responses (i.e., responses that receive a 4) will additionally:
+Great responses (i.e., responses that receive a 4 out of 4) will additionally:
 
    + be particularly insightful, by using concepts from the reading to classify
    aspects of each DSL in the assignment and / or by disagreeing with the
