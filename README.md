@@ -42,12 +42,12 @@ _<sup>1</sup> This copy of the reading is for class use only. You should not dis
  class is over._
 
 ## Find a DSL
-Find a DSL---one that you think most other people in the class *won’t* know. 
+Find a DSL—one that you think most other people in the class *won’t* know. 
 When picking a DSL, it's good to find one for which you can find a few 
 example programs, so you can get a good sense of it. Sometimes it's hard to be 
 sure whether or not a language is actually a DSL. That's okay! If you find a 
 language that you think *might* be a DSL, but you're not sure, then go with 
-it---just assume that it *is* a DSL.
+it—just assume that it *is* a DSL.
 
 ## Describe your DSL
 Open the file `my-dsl.md`, read the questions there, and edit the file to
