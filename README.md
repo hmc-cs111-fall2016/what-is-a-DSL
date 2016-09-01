@@ -29,6 +29,11 @@ assignment, you'll pick a partner and review each other's work.
 [This article][Assignment HOWTO] describes how we'll do our assignments on
 GitHub. Be sure to read it before you start working on your assignment.
 
+Also, if git or GitHub is new to you, please don't spend a lot of time
+struggling with it. We can do a quick primer during office hours instead.
+Just make progress on the assignment and send me a Piazza message saying
+that you'd like to talk about git / GitHub.
+
 ## Read Fowler's introduction to DSLs
 Read [Fowler, Chapter 2][Fowler].<sup>1</sup> For the most part, this reading is 
 self-contained. In a few places, Fowler references other parts of the book. 
