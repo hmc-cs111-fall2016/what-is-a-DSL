@@ -96,7 +96,7 @@ review is on the right side of this table:
 | Jeb B.      | Ross W.                     |
 | Jon L.      | Sophia S.                   |
 | Julien C.   | Tiffany F.                  |
-| Justin C.   | Wokky P.                    |
+| Justin C.   | Woky P.                     |
 | Linnea N.   | Anna C.                     |
 | Matt B.     | Anthony R.                  |
 | Michael S.  | Daniel S.                   |
@@ -104,7 +104,7 @@ review is on the right side of this table:
 | Ross W.     | Farhan A.                   |
 | Sophia S.   | Jeb B.                      |
 | Tiffany F.  | Jon L.                      |
-| Wokky P.    | Julien C.                   |
+| Woky P.     | Julien C.                   |
 
 ## Peer-review your partner's work
 Once your partner has submitted, you can comment on their work. You should find
