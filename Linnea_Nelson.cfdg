@@ -1,0 +1,38 @@
+startshape setup
+rule setup {
+	PETALS2 {hue 150 sat 1 b 1 }
+	CENTER {size 1 y 57 x -85}
+}
+
+rule PETAL {
+	CIRCLE {size 1 y 0 x 0}
+	CIRCLE {size 0.8 y 0 x 0 hue 20 sat 0.9 b 1}
+	CIRCLE {size 0.6 y 0 x 0 hue 40 sat 0.9 b 1}
+	CIRCLE {size 0.4 y 0 x 0 hue 60 sat 0.9 b 1}
+	CIRCLE {size 0.2 y 0 x 0 hue 80 sat 0.9 b 1}
+}
+
+rule PETALS {
+	PETAL {size 30}
+	PETALS {size 0.8 x 45 r 10}
+	PETALS {hue 190 sat 1 b 1 size 0.2 x 16  y 30  r 1}
+	PETALS {hue 190 sat 1 b 1 size 0.4 x 16  y 30  r 100}
+	PETALS {hue 190 sat 1 b 1 size 0.4 x 16  y 30  r 150}
+	PETALS {hue 190 sat 1 b 1 size 0.6 x 0.7  y 30  r 400}
+}
+rule PETALS2 {
+	PETAL {size 30}
+	PETALS2 {size 0.95 y 100 r 60}
+	PETALS2 {size 0.3 y 140 r 60}
+
+	PETALS {}
+}
+
+rule CENTER {
+	CIRCLE {size 3}
+	CENTER {size 0.99 x 5 r 600}
+}
+
+
+
+
