@@ -32,7 +32,7 @@ One could argue that this is an external DSL because it is meant to be used stan
 # Host language
 _What language(s) was (were) used to implement the DSL?_
 
-Awk and PIC were used to implement the DSL.
+Awk and PIC were used to implement the DSL. Awk is a programming language used for text processing. PIC is a DSL used for drawing diagrams with arrows and shapes. 
 
 # Benefits
 _Identify one potential benefit of the DSL: how is a programmer's life or a 
