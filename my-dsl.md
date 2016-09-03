@@ -1,6 +1,6 @@
 # Language
-_What is the name of the language? Link the name to its webpage 
-(if appropriate)._
+What is the name of the language? Link the name to its webpage 
+(if appropriate).
 
 
 # Domain
