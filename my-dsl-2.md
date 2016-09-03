@@ -36,6 +36,9 @@ Melodica is purely domain-specific. The domain is music, and the user can
 create only music loops. (I suppose it's also possible to draw pictures on the
 grid, with no thought about the music; but that would be domain-specific, too).
 
+Programs in Melodica are also purely data. There's no way to create
+new kinds of data, and there are no control-flow constructs to choose from.
+
 # Internal or external?
 _Is the language implemented as an internal or external DSL? 
 Justify your answer._
