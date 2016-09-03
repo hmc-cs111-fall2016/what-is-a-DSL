@@ -1,0 +1,17 @@
+startshape SNOWFLAKE
+
+
+rule SNOWFLAKE {
+	CIRCLE { size 0.17 }
+	NEXTLAYER { size .55}
+}
+
+rule NEXTLAYER {
+    4* [r 90] CIRCLE { r 45 x 0.5 s 0.15 }
+    CIRCLE { s 0.25 b 1 }
+    NEXTLAYER { size .43 y-0.5 r 45} 
+    NEXTLAYER { size .43 y 0.5 r 45}
+    NEXTLAYER { size .43 x-0.5 r 45} 
+    NEXTLAYER { size .43 x 0.5 r 45}
+}
+
