@@ -2,7 +2,7 @@
 _What is the name of the language? Link the name to its webpage 
 (if appropriate)._
 
-The name of the language is CHEM. It is fairly old, so it does not have a webpage. However, a paper that talks about it can be found at this link http://dl.acm.org/citation.cfm?id=315691
+The name of the language is CHEM. It is fairly old, so it does not have a webpage. However, a paper that talks about it can be found at this link: http://dl.acm.org/citation.cfm?id=315691
 
 # Domain
 _Describe the language's domain in five words._
