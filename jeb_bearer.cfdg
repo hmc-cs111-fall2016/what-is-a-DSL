@@ -1,0 +1,34 @@
+startshape LINES
+
+rule LINES {
+	LINE{r 45 hue 90 sat 1 brightness 0}
+	LINE{r -45 hue 0 sat 1 brightness 0 x 10}
+	LINE{r 45 hue 215 sat 1 brightness 0 x 5 y 3}
+}
+
+rule LINE {
+	SQUARE{}
+
+	// Increase z as we go so that when two lines overlap, the newer line gets
+	// drawn on top.
+	LINE{y 0.8 z 0.1}
+}
+
+// Branch into a new line like a 4-way intersection. The cross-line will be a
+// bit thinner than the "main" line
+rule LINE 0.1 {
+	// Continue the original line
+	LINE{}
+
+	// Create the cross-line. Playing with the size factor can to some extent
+	// determine the complexity of the result, although there appears to be a
+	// narrow range in which it works, something like 0.7 - 0.8.
+	LINE{r 90 size 0.73 brightness 0.1}
+	LINE{r -90 size 0.73 brightness 0.1}
+}
+
+// End of the line...
+// Note: it seems to be important that the weights for the branching rule and
+// the stopping rule are balanced. Too much branching and  we recurse forever,
+// too little and nothing interesting happens.
+rule LINE 0.1 {}
