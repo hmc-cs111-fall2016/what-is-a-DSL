@@ -1,0 +1,42 @@
+startshape blades
+ 
+// originally inspired by http://www.contextfreeart.org/gallery/view.php?id=1124
+
+background {a -1}
+
+rule orchard {
+	15* {x 8}  {
+		15* {x 2 y 2 z -1 s .95 a .1} blade {}
+	}
+}
+
+rule blades {
+	blade {}
+	blades {x -15 y .5 size .85 alpha .99}
+	blades {x 15 y .5 size .85 alpha .99}
+}
+
+rule blades  {
+	blade {}
+	blades {x -15 y -.5 size .85 alpha .99}
+	blades {x 15 y -.5 size .85 alpha .99}
+}
+
+rule blade {
+	seed {}
+	blade {y 1.2 size 0.99 rotate -1}
+}
+
+rule blade .02 {
+	blade {rotate -5 brightness .03}
+	blade {y 1 x -.5 size .7 rotate 30 brightness .1 flip 90}
+	blade {y 1 x .5 size .7 rotate -30 brightness .1 flip 90}
+}
+
+rule blade .05 {
+	blade {flip 90}
+}
+ 
+rule seed {
+	SQUARE{ sat 0.6 hue 120}
+}
