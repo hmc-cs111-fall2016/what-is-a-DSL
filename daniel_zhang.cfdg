@@ -1,0 +1,26 @@
+startshape SETUP
+
+rule SETUP {
+	// can't use adjustments on start shape
+	// so the setup shape was needed
+	FRACTAL_3D { sat .2 }
+}
+
+rule FRACTAL_3D {
+	3* {r 120} ARM {}	
+}
+
+rule ARM {
+	PYRAMID_BLOCK{ }
+	ARM { x .5 s .5 r 60 sat .3 }
+}
+
+rule PYRAMID_BLOCK {
+	3* {r 120} PYRAMID {}
+}
+rule PYRAMID {
+	TRIANGLE { }
+	PYRAMID {   x .007 s .95 b .03 }
+}
+
+
