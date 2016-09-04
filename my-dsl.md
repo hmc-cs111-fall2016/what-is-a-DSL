@@ -7,7 +7,7 @@ _What is the name of the language? Link the name to its webpage
 # Domain
 _Describe the language's domain in five words._
 
-Efficient portable software runtime environment.
+Efficient portable software runtime environments.
 
 # Computational model
 _We don't yet have a great definition of the term "computational model".
@@ -57,10 +57,10 @@ _What language(s) was (were) used to implement the DSL?_
 
 Looking through the [source code](https://github.com/docker/docker) of the
 whole Docker infrastructure, the parser and builder are written in Golang (and
-some supporting C) which are used to essentially take the commands in the
-Dockerfile and turn them into the lower-level commands to eventually build
-a final container. Docker commands wrap system commands and logical build steps
-under more general, limited commands.
+some supporting C) which are used to essentially take the English  text commands
+in the Dockerfile and turn them into the lower-level commands to eventually
+build a final container. Docker commands wrap system commands and logical build
+steps under more general, limited commands.
 
 # Benefits
 _Identify one potential benefit of the DSL: how is a programmer's life or a
@@ -80,9 +80,9 @@ _Identify one potential drawback of the DSL: what does a programmer or company
 lose by using this DSL instead of a general-purpose language?_
 
 Dockerfile's do not allow custom commands&mdash;instead people will have a
-simple Docker command call to complex script making it a bit of a scavenger hunt
-to find what exactly is happening from the top-level. It would be nice if a user
-could add custom commands to encapsulate common actions.
+simple Docker command call to a complex script making it a bit of a scavenger
+hunt to find what exactly is happening from the top-level. It would be nice if a
+user could add custom commands to encapsulate common actions.
 
 For example, let's say I want to have a part of my build that is functionally
 used to seed data (a common occurrence when building images). Instead of writing

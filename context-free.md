@@ -25,16 +25,17 @@ It is hard to create pictures of non-organic items (or perhaps my artistic
 skills and familiarity with the language need more developing). Since
 ContextFree is code that starts with primitive shapes, one must try really hard
 to mentally divide a non-organic shape into primitive shapes if they want to
-draw it accurately.
+draw it accurately. Making adjustments requires a bit of guess and check then
+a slow re-render which makes it harder.
 
 ## How did you learn how to program in this language?
 
 At first, I began looking through the documentation directly, but quickly
-realized learning a coding language destined for visual design was better suited
+realized learning a DSL destined for visual design was better suited
 for experimentation, so I switched to looking at sample images on the Context
 Free website.
 
-By looking and downloading the source and investigating how the
+By looking at and downloading the source and investigating how the
 images "worked"&mdash;a combination of reading more of the documentation as
 needed and experimentally commenting lines out and adjusting values then
 analyzing its effect on the final image&mdash;I was able to (partially) grasp
@@ -49,7 +50,12 @@ At first, the parser or image builder looks for the top-level shape and then
 looks to see what other shapes it is composed of. Once it finally hits a
 primitive shape, it renders a unit of the larger shape with the specified
 characteristics. As it continues and the sub-shapes are drawn, the larger shapes
-naturally come to life. 
+naturally come are created. When there are no more loops to evaluate or
+primitives to draw it finishes.
+
+Since there is randomness embedded into the renderer, there is almost certainly
+a step before the rendering where the builder chooses a seed value for the
+"random" selections.
 
 ## What do you think is interesting about the ContextFree program you wrote?
 
