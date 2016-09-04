@@ -6,6 +6,7 @@ is named [LilyPond](http://lilypond.org).
 
 # Domain
 _Describe the domain of the language in five words._
+
 Typesetting musical scores from text.
 
 # Computational model
@@ -48,10 +49,10 @@ _Is the language implemented as an internal or external DSL?
 Justify your answer._
 
 The language is implemented as an external DSL.  Although based on the syntax
-I assumed that it was an internal DSL of LaTeX, that provided macros or wrappers
-for TikZ commands, it turns out that this was incorrect.  LilyPond is an
-external DSL, implemented in a mix of C++ and Lisp, and simply expects its
-input text in a format similar to TeX.
+I initially assumed that it was an internal DSL of LaTeX, that provided
+macros or wrappers for TikZ commands, it turns out that this was incorrect.
+LilyPond is an external DSL, implemented in a mix of C++ and Lisp, and
+simply expects its input text in a format similar to TeX.
 
 # Host language
 _What languages were used to implement the DSL?_
@@ -68,7 +69,7 @@ to make the choice between a simple framework for plotting single notes and a
 complex system that covers all the use cases of DSLs.
 
 Of course, this benefit alone could be provided simply by a library, why does
-it require its own DSL?  The major benefit of having it be its own language 
+it require its own DSL?  The major benefit of having it be its own language
 is the extra readability and ease of use, since there is no need to learn the
 many intricacies of LaTeX, many of which are irrelevant if the only
 functionality one is interested in is the ability to typeset music.
@@ -87,7 +88,7 @@ situations.  While it might prove helpful for users familiar with LaTeX syntax,
 the fact that it is _not_ actually a subset of LaTeX syntax might surprise
 some individuals, lured into a false sense of security by the backslash
 denoted commands, such as `\clef`.  It might be tempting to throw in a
-`\vspace{2pt}` in the code, which will not be recognized as valid by LilyPond.
+`\vspace{2pt}` in the code, which LilyPond will reject as invalid.
 
 There may also be the issue that those completely _unfamiliar_ with LaTeX
 will also have trouble with the syntax.  `\clef bass` might seem less intuitive
