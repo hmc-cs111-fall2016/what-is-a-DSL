@@ -1,0 +1,19 @@
+startshape colorglobe
+
+rule colorglobe {
+	300* {hue 10 r 10 x 1 y 1} concentrics {}
+}
+
+rule concentrics {
+	60* {r 6} inner{}
+	36* {r 10} outer{}
+}
+
+rule inner {
+	SQUARE [x 2 y 2 b 3 hue 0 saturation 1]	
+}
+
+rule outer {
+	SQUARE [x 6 y 6 b 1 hue 10000 saturation 1]
+}
+
