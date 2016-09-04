@@ -1,11 +1,16 @@
 # Language
+_What is the name of the language? Link the name to its webpage._
 The Domain Specific Language I will be discussing
 is named [LilyPond](http://lilypond.org).
 
 # Domain
+_Describe the domain of the language in five words._
 Typesetting musical scores from text.
 
 # Computational model
+_Fowler writes about a spectrum of languages, from general-purpose 
+languages to "purely" domain-specific. Where does the DSL you chose fall on
+this spectrum, and why?_
 The DSL will take text input from the user, parse it and generate 
 a typeset musical score in a specificed format (such as PDF or PNG).
 
@@ -21,13 +26,16 @@ For example, the following code, with LaTeX reminiscent syntax:
 ![input-annotate.png](http://lilypond.org/pictures/text-input-1-annotate.png)
 
 produces the following output:
+
 ![output.png](http://lilypond.org/pictures/text-input-1-output.png)
 
 # DSL-ness
-LilyPond is on the domain-specific side
 _Fowler writes about a spectrum of languages, from general-purpose languages to 
 "purely" domain-specific. Where does the DSL you chose fall on this spectrum, 
 and why?_ 
+LilyPond is on the domain-specific side of the spectrum.  Although it can be
+used to typeset many forms of music with great generality, its domain is purely
+contained in the 
 
 
 # Internal or external?
