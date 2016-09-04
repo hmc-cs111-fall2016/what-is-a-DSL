@@ -19,6 +19,7 @@ then compiled to produce a beautiful document.
 
 For example, the following code, with LaTeX reminiscent syntax:
 ![input-annotate.png](http://lilypond.org/pictures/text-input-1-annotate.png)
+
 produces the following output:
 ![output.png](http://lilypond.org/pictures/text-input-1-output.png)
 
