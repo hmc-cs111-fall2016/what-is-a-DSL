@@ -19,7 +19,7 @@ POV-Ray contains a _front-end_ and a _back-end_.  A user specifies various
 fields such as a light source, camera, shape, background, etc.  The front-end
 locates the files and gives them to the back-end to parse and compute the
 image data.  The back-end then sends the information back to the front-end,
-which writes the image data to a file.
+which writes the image data to a file. [Source](https://github.com/POV-Ray/povray/blob/master/source-doc/architecture.md)
 
 # DSL-ness
 _Fowler writes about a spectrum of languages, from general-purpose languages to
@@ -51,16 +51,17 @@ company's bottom line made easier by the existence of this language?_
 
 The language is much more specific to rendering images, and so it is much
 easier to read the code and figure what the programmer is intending than it
-would be without POV-Ray.
+would be without POV-Ray.  Also, this language keeps the programmer from
+doing the complicated calculations that come with rendering and optimizing 3D
+graphics based on camera position, light source, etc.  
 
 # Drawbacks
 _Identify one potential drawback of the DSL: what does a programmer or company 
 lose by using this DSL instead of a general-purpose language?_
 
-This DSL is perhaps does not have as many features as using a library from
-another language (like python).  For example, it doesn't have an IDE, and is
-probably not as thoroughly tested.
-
-# Fun Fact
-It was the first ray tracer used in orbit, when Mark Shuttleworth created an
-image in the International Space Station.
+According to their [docs](http://www.povray.org/documentation/3.7.0/u1_1.html#u1_1), you cannot edit objects on the screen with a 
+point-and-click interface".  This could be a drawback for a company that is
+more interested in building images interactively than from a text file.  There
+are many other DSLs that have such interfaces built in.  However, POV-Ray 
+claims that supporting interactivity causes has its drawbacks for "absolute 
+control of the scene".
