@@ -1,0 +1,28 @@
+startshape BRANCH1
+
+rule BRANCH1 {
+	SQUARE{}
+	BRANCH1 {y 1.0 size 0.99 rotate 1.5 brightness 0.02}
+}
+
+rule BRANCH2 0.05 {BRANCH1 {}}
+
+rule BRANCH2 {
+	SQUARE{ hue 0.7 sat 1.5 b 1 s 1 a -.9 y -1 r 72}
+	BRANCH2 {y 1.0 size 0.99 rotate -1.5}
+}
+
+rule BRANCH1 0.05 {
+	SQUARE{sat 1.5 b 1 s 1 a -.9 y -1 r 720}
+	BRANCH2 {y 1.0 size 0.99 rotate 1.1}
+	BRANCH1 {y 1.0 size 0.6 rotate -60}
+	BRANCH2 {y 1.0 size 0.5 rotate 60}
+}
+
+rule BRANCH2 0.05 {
+	SQUARE{hue 0.7 sat 1.5 b 1 s 1 a -.9 y -1 r 72}
+	BRANCH1 {y 1.0 size 0.99 rotate 1.5}
+	BRANCH2 {y 1.0 size 0.6 rotate -60}
+	BRANCH1 {y 1.0 size 0.5 rotate 60}
+}
+
