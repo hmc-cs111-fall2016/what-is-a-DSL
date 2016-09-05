@@ -32,9 +32,6 @@ the Context Free IDE, and I also looked at the [Context Free Art Gallery](
 http://www.contextfreeart.org/gallery/index.php).
 
 ## What is the underlying _computational model_ for this programming language? 
-_We don't yet have a great definition of the term "computational model". 
-For now, try to come up with the clearest, most concise explanation of what 
-happens when a ContextFree program runs._
 The computational model is a recursive one in which every base case
 is the drawing of a primitive shape (perhaps with modifications) or the
 automatic "bottoming-out" when a shape is too small to display. In some ways
