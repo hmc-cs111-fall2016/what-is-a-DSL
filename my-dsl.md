@@ -59,9 +59,9 @@ graphics based on camera position, light source, etc.
 _Identify one potential drawback of the DSL: what does a programmer or company 
 lose by using this DSL instead of a general-purpose language?_
 
-According to their [docs](http://www.povray.org/documentation/3.7.0/u1_1.html#u1_1), you cannot edit objects on the screen with a 
-point-and-click interface".  This could be a drawback for a company that is
-more interested in building images interactively than from a text file.  There
-are many other DSLs that have such interfaces built in.  However, POV-Ray 
-claims that supporting interactivity causes has its drawbacks for "absolute 
-control of the scene".
+If you used POV-Ray, instead of a general-purpose language, you would be 
+limited to the domain of POV-Ray.  For example, you wouldn't be able to animate
+the images.  Also, POV-Ray admits that it has no "point-and-click interface",
+as this would limit the user's "control of the scene".  If your project
+required these other features, it would be better to use a general-purpose
+language. [Source](http://www.povray.org/documentation/3.7.0/u1_1.html#u1_1)
