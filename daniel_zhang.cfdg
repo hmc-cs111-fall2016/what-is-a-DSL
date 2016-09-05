@@ -1,0 +1,32 @@
+startshape SETUP
+
+rule SETUP {
+	// can't use adjustments on start shape
+	// so the setup shape was needed
+	FRACTAL_3D { sat .2 }
+}
+
+rule FRACTAL_3D {
+	// Create the 3 triangular arms
+	3* {r 120} ARM {}	
+}
+
+rule ARM {
+	// Each arm is made up of increasingly
+	// smaller pyramid blocks
+	PYRAMID_BLOCK{ }
+	ARM { x .5 s .5 r 60 sat .3 }
+}
+
+rule PYRAMID_BLOCK {
+	// A set up three super-imposed pyramids
+	3* {r 120} PYRAMID {}
+}
+rule PYRAMID {
+	// Stack smaller and brighter triangles
+	// to make the object look 3D
+	TRIANGLE { }
+	PYRAMID {   x .007 s .95 b .03 }
+}
+
+
