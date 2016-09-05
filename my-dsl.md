@@ -17,12 +17,11 @@ For now, try to come up with the clearest, most concise explanation of
 what happens when a program in your DSL runs._
 BML code specifies the behaviors to be performed by an embodied conversation 
 agent - these can include nonverbal facial and body movements as well as 
-verbal behaviors. The code is executed through a module called a BML 
-Realizer, which may be run as a stand-alone application, embedded as a 
-library, or embedded within a game engine. When the BML Realizer is run, an 
-embodied conversation agent that is integrated with the BML Realizer performs 
-the behaviors. 
-
+verbal behaviors. The code is executed through a module called a BML Realizer, 
+which may be run as a stand-alone application, embedded as a library, or 
+embedded within a game engine. When the BML Realizer is run, an embodied 
+conversation agent that is integrated with the BML Realizer performs the 
+behaviors. 
 
 ## DSL-ness
 _Fowler writes about a spectrum of languages, from general-purpose languages to 
@@ -30,9 +29,9 @@ _Fowler writes about a spectrum of languages, from general-purpose languages to
 and why?_ 
 I would say BML is purely domain-specific because it functions specifically 
 as a tool for behavior generation for embodied agents, and it is often used 
-in conjunction with other languages to produce more sophisticated 
-applications (i.e. using BML to control characters in a game engine like 
-Unity, which uses JavaScript or C# scripts).
+in conjunction with other languages to produce more sophisticated applications 
+(i.e. using BML to control characters in a game engine like Unity, which uses 
+JavaScript or C# scripts).
 
 
 ## Internal or external?
@@ -55,7 +54,8 @@ company's bottom line made easier by the existence of this language?_
 BML provides a centralized language for controlling and rigging character 
 behavior, and because BML realizers can be integrated into different 
 platforms, developers have the ability to use this language in developing 
-different types of applications that involve some sort of character speech +and movement. 
+different types of applications that involve some sort of character speech 
+and movement. 
 
 ## Drawbacks
 _Identify one potential drawback of the DSL: what does a programmer or company 
@@ -66,4 +66,3 @@ locomotion produced by BML may not be exactly what the developer wants. So
 even though BML may one day make a developer’s work much easier, this will 
 depend on how much BML realizers can be improved, which will certainly take 
 some time. 
-

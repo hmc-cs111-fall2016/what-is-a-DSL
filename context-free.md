@@ -2,18 +2,20 @@
 
 ##  Who is this programming language for?
 ContextFree can be used by people who want to create digital images, 
-especially those that involve repeating structures, through some simple programming.
+especially those that involve repeating structures, through some simple
+programming.
 
 ## What is easy to do in this language? Why is it easy?
 It is quite easy to create images that involve many repeating shapes because 
 you can create multiples of many shapes and manipulate them using recursion.
 
-## What is hard to do in this language? Why is it hard?
+## What is hard to do in this language? Why is it hard? 
 It is more difficult to create organic shapes and lines in this language 
 because you are essentially limited to three basic shapes: squares, circles, 
 and triangles. It is much different from physically drawing something because 
-you need to program every part of the image. So while it is very easy to make 
-repetitive patterns it is hard to create something that looks more free form +and natural.
+you need to program every part of the image. So while it is very easy to make
+repetitive patterns it is hard to create something that looks more free form 
+and natural.
 
 ## How did you learn how to program in this language?
 I learned through the two lessons and the examples that were included in the 
@@ -37,3 +39,6 @@ be called within that main rule in order to be used.
 I think peacocks have really interesting symmetry and repeating features, and 
 I was able to use the methodological nature of ContextFree programming in 
 order to create a geometric peacock. 
+
+
+
