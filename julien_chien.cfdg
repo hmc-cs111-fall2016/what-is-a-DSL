@@ -1,0 +1,48 @@
+background {b 1}
+
+startshape ILLUMINATI
+
+rule ILLUMINATI {
+    CIRCLE {b 1 size .8}
+    TRIANGLE {hue 120 sat 0.8 b .3 y -.077}
+    EYE {size .1 hue 5 sat 0.8 b 1 y .2}
+    LINE {x .12}
+    LINE {x .1}
+    LINE {}
+    LINE {x -.1}
+    LINE {x -.12}
+    LINE {x .05}
+    LINE {x -.05}
+    LINE2 {x .3}
+    LINE2 {x .25}
+    LINE2 {x .2}
+    LINE2 {x .15}
+    LINE2 {x .1}
+    LINE2 {}
+    LINE2 {x -.1}
+    LINE2 {x .05}
+    LINE2 {x -.05}
+    LINE2 {x -.3}
+    LINE2 {x -.25}
+    LINE2 {x -.2}
+    LINE2 {x -.15}
+    CIRCLE2 {size .1 x .35 y -.4 b 0}
+}
+
+rule EYE {
+    CIRCLE {s 3 2 }
+    CIRCLE {s 1 2 hue 20}
+}
+
+rule LINE {
+    SQUARE {b 1 size .05 y .35}
+}
+
+rule LINE2 {
+    SQUARE {b 1 size .05 y .05}
+}
+
+rule CIRCLE2 {
+   CIRCLE2 {x 1 y 1 r 15} 
+   SQUARE{}
+}
