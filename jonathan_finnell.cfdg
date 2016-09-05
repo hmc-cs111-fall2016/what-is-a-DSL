@@ -1,0 +1,27 @@
+startshape start
+ 
+rule start
+{
+    line {a -1 b .4 hue 150 sat .5 r -90}
+}
+ 
+rule line
+{
+    draw {}
+ 
+    fractal{a .1 h 20}
+}
+ 
+rule fractal
+{
+ 
+    line{ s 0.707 r -45}
+    line{ s 0.707 x .5 y -.5 r 45}
+}
+ 
+path draw{
+    MOVETO{ y 0 x 0 }
+    LINETO{ y 0 x 1 }
+ 
+    STROKE { width 0.1}
+}
