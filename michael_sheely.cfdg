@@ -1,0 +1,16 @@
+
+startshape sierpinski
+
+rule sierpinski {
+	// Give a border for aesthetic purposes
+	TRIANGLE []
+	sierpinski_recursive [ s 0.5 ]
+}
+
+rule sierpinski_recursive {
+	// Upside down white triangle
+	TRIANGLE [r (180) b 1]
+	sierpinski_recursive [ x .5 y -.29 s 0.5 hue 3 sat 2]
+	sierpinski_recursive [ x -.5 y -.29 s 0.5 hue 15 sat 1]
+	sierpinski_recursive [ y 0.58 s 0.5 hue -19 sat -1]
+}
