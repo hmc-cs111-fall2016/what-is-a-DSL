@@ -1,0 +1,43 @@
+startshape Peacock
+
+rule Peacock {
+	Body { }
+	Head { x 0 y 0.8 s 0.2  }
+	28 * {r 6.7} Plumage { }
+}
+
+rule Body {
+	TRIANGLE { y 0.3 s 0.4 1 hue 230 sat 1  b 1}
+	CIRCLE { y 0 s 0.6 0.4 hue 230 sat 1  b 1 }
+	Legs {hue 45 sat 1  b 1 }
+}
+
+rule Legs {
+	SQUARE { x 0.05 y 0 s 0.03 0.8}
+	SQUARE { x 0.05 y -0.45 s 0.01 0.08}
+	SQUARE { x 0.08 y -0.45 s 0.01 0.08 r 30}
+	SQUARE { x 0.02 y -0.45 s 0.01 0.08 r -30}
+
+	SQUARE { x -0.05 y 0 s 0.03 0.8}
+	SQUARE { x -0.05 y -0.45 s 0.01 0.08}
+	SQUARE { x -0.08 y -0.45 s 0.01 0.08 r -30}
+	SQUARE { x -0.02 y -0.45 s 0.01 0.08 r 30}
+}
+
+rule Head {
+	CIRCLE { s 0.7 1 hue 230 sat 1  b 1}
+	TRIANGLE { s 0.4 r 180 hue 45 sat 1  b 1 }
+}
+
+rule Plumage {
+	Feather { s 0.3 0.05 hue 230 sat 1  b 1 }
+	CIRCLE { x 0.8 s 0.1 hue 100 sat 1 b 0.8}
+	CIRCLE { x 1.2 s 0.15 hue 100 sat 1 b 0.8}
+	CIRCLE { x 1.6 s 0.2 hue 100 sat 1 b 0.8}
+	CIRCLE { x 2.0 s 0.2 hue 100 sat 1 b 0.8}
+}
+
+rule Feather {
+	SQUARE {}
+	Feather { x 0.15 s 0.98}
+}
