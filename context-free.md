@@ -1,7 +1,7 @@
 # Context Free
 
 ##  Who is this programming language for?
-+ContextFree can be used by people who want to create digital images, +especially those that involve repeating structures, through some simple +programming.
+ContextFree can be used by people who want to create digital images, +especially those that involve repeating structures, through some simple programming.
 
 ## What is easy to do in this language? Why is it easy?
 +It is quite easy to create images that involve many repeating shapes because +you can create multiples of many shapes and manipulate them using recursion.
