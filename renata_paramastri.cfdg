@@ -1,0 +1,39 @@
+startshape human
+
+rule human {
+	CIRCLE {y 2.6}
+	rectangle {size 0.4}
+	rectangle {  // left arm
+		size 0.2 
+		rotate 90
+		y 1.6
+	}
+	rectangle {  // right arm
+		size 0.2
+		rotate 90
+		y 1.6
+		x 1.2
+	}
+	rectangle {  // left leg
+		size 0.2
+		rotate 150
+	}
+	rectangle {  // right leg
+		size 0.2
+		rotate 210
+	}
+	human {
+		size 0.2
+		y 1.9
+		x -1
+	}
+	human {
+		size 0.2
+		y 1.9
+		x 1
+	}
+}
+
+rule rectangle {
+	7* {y 1} SQUARE {}
+}
