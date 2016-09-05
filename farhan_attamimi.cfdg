@@ -1,0 +1,15 @@
+startshape START
+
+rule START {
+	TRAIL{hue 500}
+}
+
+rule TRAIL{	
+	8* {hue -10 r 45 x 1 y 1 } STAR {}
+	TRAIL{ s .75 r 1 x 0 y 0}
+}
+
+rule STAR  {
+	8* {hue 100 r 45 } SQUARE {  sat 50 s 0.5 }
+    	STAR { size .25 b 0.75 sat .5 hue 50}
+}
