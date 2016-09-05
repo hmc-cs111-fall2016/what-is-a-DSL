@@ -1,38 +1,32 @@
 # Language
-_What is the name of the language? Link the name to its webpage 
-(if appropriate)._
+[discord.py](https://github.com/Rapptz/discord.py)
 
 
 # Domain
-_Describe the language's domain in five words._
+Creating bot clients for Discord
 
 
 # Computational model
-_We don't yet have a great definition of the term "computational model". 
-For now, try to come up with the clearest, most concise explanation of 
-what happens when a program in your DSL runs._
+The Python interpreter executes the program as it would Python code.
 
 
 # DSL-ness
-_Fowler writes about a spectrum of languages, from general-purpose languages to 
-"purely" domain-specific. Where does the DSL you chose fall on this spectrum, 
-and why?_ 
+Extremely domain specific. This cannot be used to do anything other than creating Discord bots.
 
 
 # Internal or external?
-_Is the language implemented as an internal or external DSL? 
-Justify your answer._
+This is an internal language. It is all valid python code and is meant to be interpreted as such.
 
 
 # Host language
-_What language(s) was (were) used to implement the DSL?_
+Python
 
 
 # Benefits
-_Identify one potential benefit of the DSL: how is a programmer's life or a 
-company's bottom line made easier by the existence of this language?_
+This greatly lessens the development time of Discord bots as you don't need to learn the
+intricacies of the HTTP API or any other network information. The program reads more as
+and event reaction program than dealing with netcode.
 
 
 # Drawbacks
-_Identify one potential drawback of the DSL: what does a programmer or company 
-lose by using this DSL instead of a general-purpose language?_
+This is an additional section of code that would have to be maintained and updated as Discord added more features or changed existing ones.
