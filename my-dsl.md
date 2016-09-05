@@ -33,7 +33,7 @@ _Is the language implemented as an internal or external DSL?
 Justify your answer._
 It is an external DSL. The main language that it works with are usually the
 bash commands that it runs. It uses another language's syntax (XML) to make the 
-`plist`s.
+`plist`s, as Fowler mentioned, this is a typical trait of external DSLs.
 
 
 # Host language
