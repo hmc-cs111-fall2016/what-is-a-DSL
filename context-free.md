@@ -17,6 +17,7 @@ At first, I read through the documentation to get a feel for the syntax and "wor
 _We don't yet have a great definition of the term "computational model". 
 For now, try to come up with the clearest, most concise explanation of what 
 happens when a ContextFree program runs._
+
 The program renders the shapes in the order that the syntax references them, from the top to the bottom. In the more complicated programs we can see this process unfold. 
 
 
