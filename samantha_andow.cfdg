@@ -1,0 +1,63 @@
+startshape FLOCK
+
+rule FLOCK {
+	BIRD{}
+	BIRD{x -15 y -2}
+	BIRD{x -10 y 3}
+	BIRD{x -7 y -1}
+	BIRD{x 10}
+	BIRD{x 5 y -2}
+	BIRD{x 15 y -3}
+	BIRD{x 25 y -3}
+	BIRD{x 30 y 4}
+	BIRD{x 35}
+	FOREST{}
+}
+
+rule BIRD {
+	ARCL{size 0.3 x 20 y 25 flip 45}
+	ARCL{size 0.3 x 20 y 25 r 90}
+	CIRCLE{size 0.7 x 20 y 25}
+}
+
+rule FOREST{
+	5 *{x 15} ORCHARD {}}
+
+rule ORCHARD{
+	TREE {}
+	TREE {x 10 s 0.5}
+	TREE {x 5 s 0.7}
+	TREE {x -7} 
+	TREE {x -3 s 0.5}
+	TREE {x -4 s 0.7}
+	TREE {x 8} }
+
+rule TREE {
+	TREELEAVES{y 16}
+	TREELEAVES{y 18 x 2}
+	TREELEAVES{ y 16 x 2}
+	TREELEAVES{ y 13 x 1}
+	TREELEAVES{ y 13 x -2}
+	TREELEAVES{ y 16 x -3}
+	TREELEAVES{y 18 x -1}
+	TRUNK {hue 30 sat 1 b 0.2 x -0.5}
+}
+
+rule TREELEAVES{
+	CIRCLE{hue 150 sat 1 s 4 b 0.5}
+}
+
+rule TRUNK {
+	TRIANGLE [ s 1 20 y 0.26 ]
+	//MARK { }
+	//LINE { size 0.98 y 0.5 }
+}
+
+rule ARCL {
+	MARK { }
+	ARCL { size 0.97 y 0.55 r 1.5 }
+}
+
+rule MARK {
+	SQUARE { }
+}
