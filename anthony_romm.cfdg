@@ -1,0 +1,67 @@
+startshape ALIEN
+
+rule ALIEN {
+	
+	HAT { sat 1 hue 291 b .867
+		 x 12 y -14	
+	}
+	PUPIL { sat 1 hue 360 b 0 
+			x 6 y -20
+	}
+	PUPIL { sat 1 hue 360 b 0
+			 x 12 y -20
+	}
+	PUPIL { sat 1 hue 360 b 0 
+			x  18 y -20
+	}
+	EYE { sat 0 hue 360 b 1 a 1
+		x 6 y -20
+	}
+	EYE { sat 0 hue 360 b 1 a 1
+		 x 12 y -20
+	}
+	EYE { sat 0 hue 360 b 1 a 1
+			 x 18 y -20
+	}
+	FACE { sat 1 hue 100 b 1 a .3
+			x 12 y -22
+	}
+	MOUTH { sat 1 hue 360 b 0 
+			x 18 
+	}
+	BODY { sat 1 hue 48 b 1 
+		x 12 y - 32
+}
+	
+}
+
+rule EYE {
+	CIRCLE [size 5]
+}
+rule PUPIL {
+	CIRCLE [size 1]
+}
+rule FACE {
+	CIRCLE [size 20]
+}
+rule MOUTH {
+	ARCL { y -25 flip 105 r 90}
+}
+rule HAT {
+	HATLINE { }
+	SQUARE { s 12 6 y 3}
+}
+rule HATLINE {
+	SQUARE { s 16 1 }
+}
+rule BODY {
+	TRIANGLE [ s 25 10 ]
+}
+rule ARCL {
+	MARK { }
+	ARCL { size 0.97 y 0.55 r 1.5 }
+}
+
+rule MARK {
+	SQUARE { }
+}
