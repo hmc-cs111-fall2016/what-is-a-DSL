@@ -1,0 +1,63 @@
+startshape THING
+// proposal: the new cs111 alien
+
+rule THING {
+	TAIL {x -3 y -0.4 flip 0 r -150}
+	ARCL {size 0.5 r 90}
+	ARCL {size 0.5 r 90 flip 180}
+	ARCL {y -3.6 size 0.5 r -90}
+	ARCL {y -3.6 size 0.5 r -90 flip 180}
+	BELLY {x -0.5 y -1.8 hue 0}
+	EYE {x 2.5 y -1.2 size 0.4 hue 0}
+	5* {x 1.1} {
+		FEET {x -2.3 y -3.6 size 0.4}
+	}
+	ANTENNA {x 3 y -0.5 r -30}
+}
+
+rule BELLY {
+	CIRCLE { size 0.2}
+	5* {r 72 hue 72} {
+		TAIL {size 0.5 sat 1 b 1}
+	}
+}
+
+rule EYE {
+	CIRCLE {hue 0}
+	EYE {sat 0.3 b 0.15 size 0.9}
+}
+
+rule FEET {
+	CIRCLE {hue 30 sat 0.9 b 0.4}
+	FEET {size 0.9 y -0.7 r 30}
+}
+
+rule TAIL {
+	TRIANGLE {hue 120 sat 0.8 b 1}
+	TAIL {size 0.9 y 0.8 r 30}
+}
+
+rule ARCL {
+	SQUARE {hue 30 sat 0.9 b 0.4}
+	ARCL {size 0.92 y 0.8 r 3}
+}
+
+rule ANTENNA {
+	Zig {size 0.2}
+}
+
+// borrowed from the example ziggy code
+rule Zig {
+	Seg { x -0.5 r -45 }
+	SQUARE {r 45 x 1}
+	Zag { y 1 s 0.92 }
+}
+rule Zag {
+	Seg { x 0.5 r 45 }
+	SQUARE {r 45 x -1}
+	Zig { y 1 s 0.92 }
+}
+
+rule Seg {
+	SQUARE { y 0.6925 s 0.5 1.885 }
+}
